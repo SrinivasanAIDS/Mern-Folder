@@ -8,7 +8,99 @@
         <tittle>Student Course Enrolment Form</tittle>
         <link rel="stylesheet" href="assets/style/style.css">
     </head>
-    <body>
-        <p>This is initial commit for saving file structure </p>
+    <body >
+        <h1 align="center">Student Course Enrolment Form</h1>
+        <div class="formcontainer">
+            <form>
+                <div class="fname">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname" maxlength="15" placeholder="firstname.." required>
+                    <br>
+                </div>
+                <div class="lname">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lname" maxlength="15" placeholder="lastname.." required>
+                    <br>
+                </div>
+                <div class="reg-no">
+                    <label for="reg-no">Register-no</label>
+                    <input type="text" id="reg-no" name="reg-no" pattern="[0-9]{12}" maxlength="15" placeholder="Ente your 12 digit reg-no.." required>
+                    <br>
+                </div>
+                <div class="mobile-num">
+                    <label for="mobile-num">Mobile-number</label>
+                    <input type="text" id="mobile-num" name="mobile-num" maxlength="10" pattern="[0-9]{10}" placeholder="enter your 10 digit mobile num.." required>
+                    <br>
+                </div>
+                <div class="gender">
+                    <label for="gender">Gender :</label>
+                    <input type="radio" id="gender" name="Male" >
+                    <label for="male">Male</label>
+                    <input type="radio" id="gender" name="Female" >
+                    <label for="Female">Female</label>
+                    <br>
+                </div>
+                <div class="email">
+                    <label for="email">Email-id</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="department">
+                    <label for="department">Department :</label>
+                    <select name="department" id="department">
+                        <option value="" selected>select your department</option>
+                        <option value="cse">CSE</option>
+                        <option value="cybersecurity">CYBER SECURITY</option>
+                        <option value="ece">ECE</option>
+                        <option value="eee">EEE</option>
+                        <option value="mechanical">Mechanical</option>
+                        <option value="agri">Agriculture</option>
+                        <option value="chemical">Chemical</option>
+                        <option value="iot">IOT</option>
+                        <option value="ai-ds">AI-DS</option>
+                        <option value="ai-ml">AI-ML</option>
+                        <option value="bio-med/">BIO-MEDI</option>
+                    </select>
+                </div>
+                <div class="year">
+                    <label for="year">Year  :</label>
+                    <select name="year" id="year">
+                        <option value="" selected>select year</option>
+                        <option value="1st-year">1st year</option>
+                        <option value="2nd-year">2nd year</option>
+                        <option value="3rd-year">3rd-year</option>
+                        <option value="4th-year">4th-year</option>
+                    </select>
+                </div>
+                <div class="slots">
+                    <label for="slots">Available slots</label>
+                    <select name="slots" id="slots">
+                        <option value="" selected>select slots</option>
+                        <option value="slot-1">8.00 - 10.00</option>
+                        <option value="slot-2">10.00 - 12.00</option>
+                        <option value="slot-3">1.00 - 3.00</option>
+                        <option value="slot-4">3.00 - 5.00</option>
+                        <option value="slot-5">5.00 - 7.00</option>
+                    </select>
+                </div>
+                <div class="p-language">
+                    <label for="p-language">Languages Known :</label>
+                    <select name="p-language" id="p-language">
+                        <option value="" selected>select here</option>
+                        <option value="C-lang">C</option>
+                        <option value="C++">C++</option>
+                        <option value="Java">Java</option>
+                        <option value="python">Python</option>
+                    </select>
+                </div>
+                <div class="resume">
+                    <label for="resume">Resume</label>
+                    <input type="file" id="resume" name="resume-file" placeholder="upload your resume &lt 5mb pdf format">
+                </div>
+                <div class="submit">
+                    <input type="submit" id="submit" name="submit">
+                </div>
+
+            </form>
+        </div>
     </body>
 </html>

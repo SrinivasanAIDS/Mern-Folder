@@ -1,3 +1,26 @@
-p{
-    font-family: Georgia;
+.formcontainer{
+    position: relative; 
+    left: 400px;
 }
+
+form{
+    width: fit-content; 
+    padding: 40px;
+    border-radius: 0px 10px;
+    background-color: rgb(207, 200, 202);
+}
+div{
+    padding: 20px;
+}
+label{
+    font-size: medium;
+    font-weight: 400;
+    font-family:  sans-serif;
+    padding-right: 90px;
+
+}
+
+input{
+    border-radius: 7px 1px;
+}
+
